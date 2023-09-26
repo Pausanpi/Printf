@@ -1,8 +1,14 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-# include <unistd.h>
+# include <stdio.h>
+# include <stdarg.h>
 
 int	ft_putchar(char c);
 int	ft_string(char *str);
+int	ft_unsigned(unsigned int nb);
+int	ft_pointer(unsigned long long ptr);
+int	ft_hexa(unsigned long long nb, char c);
+int ft_decimal(int nb);
+int	ft_printf(char const *content, ...);
 
 #endif
