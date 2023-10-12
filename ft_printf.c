@@ -6,7 +6,7 @@
 /*   By: pausanch <pausanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 10:43:44 by pausanch          #+#    #+#             */
-/*   Updated: 2023/10/11 15:43:50 by pausanch         ###   ########.fr       */
+/*   Updated: 2023/10/12 18:19:00 by pausanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,8 @@ int	ft_printf(char const *content, ...)
 	int		x;
 	int		pos;
 
+	if (write(1, " ", 0) == -1)
+		return (-1);
 	x = 0;
 	pos = 0;
 	va_start(args, content);
